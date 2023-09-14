@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/regular.min.css">
+    <link rel="icon" href="./assets/new-logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/emoji-mart@3.0.0/css/emoji-mart.css"
+    rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@3.0.0"></script>
+    <script src="https://kit.fontawesome.com/d108590ee8.js" crossorigin="anonymous"></script>
+    <title>Home / X</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-container">
+            <header>
+                <img src="./assets/TWITTER-LOGO.png" alt="Twitter Logo">
+            </header>
+            <nav class="twitter-nav">
+                <ul class="nav-list">
+        
+                    <li><a href="#"><i class="fas fa-home"></i><span>Home</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass far" aria-hidden="true"></i><span>Explore</span></a></li>
+                    <li><a href="#"><i class="far fa-bell"></i><span>Notifications</span></a></li>
+                    <li><a href="#"><i class="far fa-envelope"></i><span>Messages</span></a></li>
+                    <li><a href="#"><i class="fars far fa-solid fa-bars"></i><span>Lists</span></a></li>
+                    <li><a href="#"><i class="far fa-user-circle"></i><span>Communities</span></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i><span>Verified</span></a></li>
+                    <li><a href="#"><i class="far fa-user"></i><span>Profile</span></a></li>
+                    <li><a href="#"><i class="fas fa-ellipsis-h more-icon"></i><span>More</span></a></li>
+                </ul>
+            </nav>
+
+                <div class="tweet-button">
+                    <button>Post</button>
+                </div>
+
+                <div class="profile-section">
+                    <div class="profile-avatar">
+                        <img src="./assets/LOGO AVATAR.jpg" alt="User Avatar">
+                    </div>
+                    <div class="profile-info">
+                        <h3 class="profile-name">Khaya Madlala</h3>
+                        <span class="profile-handle">@madlalakhaya</span>
+                    </div>
+                </div>
+        </div>
+
+        <div class="middle-container">
+            <div class="main-content">
+                <div class="title-container">
+                    <span class="title">Home</span>
+                </div>
+        
+                <div class="tabbed-navigation">
+                    <a href="/home" class="tab-link active">For You</a>
+                    <a href="/home" class="tab-link">Following</a>
+                </div>
+        
+                <form action="">
+                    <div class="post-tweet">
+                        <div class="tweet-input">
+                            <div class="avatar-tweet">
+                                <img src="./assets/LOGO AVATAR.jpg" alt="User Avatar">
+                                <input type="text" placeholder="What's happening?">
+                            </div>
+                        </div>
+                    </div>
+             
+                    <div class="tweet-actions">
+                        <!-- Add Photo/Video Button -->
+                        <label for="file-input" class="add-photo-video">
+                            <i class="fas fa-file-image" aria-hidden="true"></i>
+                        </label>
+                        <input type="file" id="file-input" style="display: none;" multiple="">
+                    
+                        <!-- Add File Button -->
+                        <button id="file-input" type="file" multiple="">
+                            <i class="fas fa-file-alt" aria-hidden="true"></i>
+                        </button>
+                    
+                        <!-- Add Emoji Button -->
+                        <label for="file-input" class="">
+                        <i class="far fa-smile add-emoji" aria-hidden="true"></i>
+                    </label>
+                        <input type="file" id="file-input" style="display: none;" multiple="">
+                    
+                        <!-- Tag Location Button -->
+                        <a href="https://www.google.com/maps?q=LATITUDE,LONGITUDE" target="_blank">
+                            <i class="fas fa-map-marker-alt tag-location" aria-hidden="true"></i>
+                        </a>
+                    
+                        <!-- Poll Link Button -->
+                        <a href="https://twitter.com/i/status/{tweet_id}" class="poll-link">
+                            <i class="fas fa-poll-h poll-icon" aria-hidden="true"></i> <!-- Poll icon -->
+                        </a>
+                    
+                        <!-- Schedule Link Button -->
+                        <a href="https://twitter.com/intent/tweet?text=Your%20Scheduled%20Tweet%20Text&amp;url=https%3A%2F%2Fyourwebsite.com%2F" class="schedule-link">
+                            <i class="far fa-calendar-alt schedule-icon" aria-hidden="true"></i> <!-- Scheduling icon -->
+                        </a>
+                     
+                            <div class="post-button">
+                                <!-- Post Button -->
+                                <button>Post</button>
+                            </div>
+                     
+                    </div>
+                </form>
+                <!-- Your tweet input and tweet section -->
+                <div class="tweet">
+                    <div class="tweet-content">
+                        <div class="avatar">
+                            <img src="./assets/offerzenlogo.jpg" alt="User Avatar">
+                            <div class="user-info">
+                                <h3 class="user-name">OfferZen</h3>
+                                <span class="user-handle">@OfferZen</span>
+                                <span class="tweet-time">Sep 11</span>
+                            </div>
+                        </div>
+                        <p class="tweet-text">
+                           💻 #Programming #Coding🌐
+                        </p>
+                        <div class="tweet-image">
+                            <img src="./assets/OFFERZEN1.webp" alt="offerzen">
+                        </div>
+                        <div class="tweet-actions-2">
+                            <i class="far fa-comment"></i>
+                            <i class="fas fa-retweet"></i>
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tweet">
+                    <div class="tweet-content">
+                        <div class="avatar">
+                            <img src="./assets/zaio.jpg" alt="User Avatar">
+                            <div class="user-info">
+                                <h3 class="user-name">Zaio Coding School</h3>
+                                <span class="user-handle">@zaionites</span>
+                                <span class="tweet-time">Sep 8</span>
+                            </div>
+                        </div>
+                        <p class="tweet-text">
+                            Building the future, one keystroke at a time. 
+                        </p>
+                            <p class="tweet-text">🌐💻 #ProgrammingProgress #CodeBuilders
+                        </p>
+                        <div class="tweet-image">
+                            <img src="./assets/F5gppuhWIAAO6Na.webp" alt="zaio">
+                        </div>
+                        <div class="tweet-actions-2">
+                            <i class="far fa-comment"></i>
+                            <i class="fas fa-retweet"></i>
+                            <i class="far fa-heart"></i>
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                
+        
+
+    <div class="right-container">
+                <!-- Styled Search Input -->
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Search Twitter">
+                </div>
+        <!-- Trending Container on the Right -->
+        <aside>
+            <div>
+                <span>Subscribe to Premium</span>
+            </div>
+            <div>
+                <span>Subscribe to unlock new features and, 
+                    if eligible, receive a share of ads revenue.</span>
+            </div>
+            <a href="/i/verified-choose">
+                <div>
+                    <span>Subscribe</span>
+                </div>
+            </a>
+        </aside>
+
+        <div class="trending-container">
+            <h2 class="trending-heading">Trends for You</h2>
+            <!-- Trending Topics -->
+            <div class="trend-card">
+                <div class="trend-card-title">
+    
+                </div>
+                <div class="trend-row">
+                    <i class="fas fa-ellipsis-h"></i>
+                    <div class="trend-icon">Trending in South Africa</div>
+                    <div class="trend-text">#SenzoMeyiwa</div>
+                    <div class="trend-text">4,009 posts</div>
+                    <div class="trend-options-icon">
+                    
+                    </div>
+                </div>
+                <div class="trend-row">
+                    <i class="fas fa-ellipsis-h"></i>
+                    <div class="trend-icon">Trending in South Africa</div>
+                    <div class="trend-text">Wuu Wuu</div>
+                    <div class="trend-text">13.5K posts</div>
+                    <div class="trend-options-icon">
+                    
+                    </div>
+                </div>
+                <!-- Add more trending rows as needed -->
+                <div class="trend-row">
+                    <i class="fas fa-ellipsis-h"></i>
+                    <div class="trend-icon">Trending in South Africa</div>
+                    <div class="trend-text">#racistbanksmustfall</div>
+                    <div class="trend-text">23.5K posts</div>
+                    <div class="trend-options-icon">
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Who to Follow Section -->
+        <div class="who-to-follow-container">
+            <h2 class="who-to-follow-heading">Who to Follow</h2>
+            <!-- Follow suggestions -->
+            <div class="follow-suggestion">
+                <div class="follow-avatar">
+                    <img src="./assets/download.png" alt="User Avatar">
+                </div>
+                <div class="follow-info">
+                    <h3 class="follow-name">Digify Africa</h3>
+                    <span class="follow-handle">@DigifyAfrica</span>
+                </div>
+                <button class="follow-button">Follow</button>
+            </div>
+            <div class="follow-suggestion">
+                <div class="follow-avatar">
+                    <img src="./assets/cif.jpg" alt="User Avatar">
+                </div>
+                <div class="follow-info">
+                    <h3 class="follow-name">Coding it Forward</h3>
+                    <span class="follow-handle">@CodingItForward</span>
+                </div>
+                <button class="follow-button">Follow</button>
+            </div>
+            <!-- Add more follow suggestions as needed -->
+        </div>
+                <!-- Footer Items -->
+                <div class="footer">
+                    <a href="#">Terms of Service</a>
+                    <!-- Add more footer items as needed -->
+                </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

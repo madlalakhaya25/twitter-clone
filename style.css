@@ -1,0 +1,1098 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Custom font */
+@font-face {
+  font-family: "YourFontName";
+  src: url("path-to-your-font.woff2") format("woff2"),
+    url("path-to-your-font.woff") format("woff");
+}
+
+/* Apply custom font to the entire body */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Style the Twitter logo */
+header img {
+  margin-left: 60px;
+  width: 25px;
+  height: 25px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+/* Style the Twitter-like navigation bar */
+.twitter-nav {
+  background-color: white;
+  color: black;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Add flex-wrap to wrap items in case of overflow */
+}
+
+/* Style the list of navigation items */
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  left: 400;
+}
+
+/* Style individual navigation items */
+.nav-list li {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+}
+
+/* Style navigation links */
+.nav-list a {
+  text-decoration: none;
+  color: black;
+  font-size: 500px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+/* Style navigation item icons */
+.nav-list i {
+  font-size: 30px;
+  margin-right: 10px;
+  margin-bottom: 4px;
+}
+
+/* Style navigation item descriptions */
+.nav-list span {
+  font-size: 16px;
+  /* Adjust other styles for descriptions as needed */
+}
+
+/* Style the "Tweet" button */
+.tweet-button {
+  text-align: center; /* Center the button */
+  margin-top: 1px; /* Add spacing between the sections */
+  margin-bottom: 30px;
+
+}
+
+/* Style the "Tweet" button on hover */
+.tweet-button button {
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tweet-button-2 {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+/* Style the "Tweet" button on hover */
+.tweet-button-2 button {
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for navigation items */
+.nav-list li:hover {
+  background-color: #b6b6b6;
+  border-radius: 16px;
+  text-decoration: none;
+}
+
+/* Hover effect for profile actions */
+.nav-list li:nth-child(8):hover,
+.nav-list li:nth-child(9):hover {
+  background-color:#b6b6b6;
+  border-radius: 16px;
+  text-decoration: none;
+}
+
+/* Style for the text color when hovering over navigation items */
+.nav-list li:hover a {
+  background-color: #b6b6b6;
+  border-radius: 16px;
+  text-decoration: none;
+}
+
+/* Style for the text color when hovering over profile actions */
+.nav-list li:nth-child(8):hover a,
+.nav-list li:nth-child(9):hover a {
+  background-color: #b6b6b6;
+  border-radius: 16px;
+  text-decoration: none;
+}
+
+/* Style for the icon color when hovering over navigation items */
+.nav-list li:hover i {
+  background-color: #b6b6b6;
+  border-radius: 16px;
+  text-decoration: none;
+}
+
+/* Style for the icon color when hovering over profile actions */
+.nav-list li:nth-child(8):hover i,
+.nav-list li:nth-child(9):hover i {
+  background-color: #b6b6b6;
+  border-radius: 16px;
+  text-decoration: none;;
+}
+
+/* Style for the "Tweet" button on hover */
+.tweet-button button:hover {
+  background-color: #0d8aec;
+}
+
+/* Style the profile section */
+.profile-section {
+  display: flex;
+  align-items: center;
+  text-align: left; /* Adjust text alignment as needed */
+}
+
+.profile-section img {
+  margin-left: 30px;
+  max-width: 100px; /* Adjust the image size as needed */
+  border-radius: 50%; /* Make it circular if desired */
+  align-items: center;
+}
+
+/* Style the profile avatar */
+.profile-avatar img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* Style the profile info */
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px; /* Add some top margin to separate it from the Tweet button */
+}
+
+/* Style the profile name */
+.profile-name {
+  font-weight: bold;
+  color: #050505;
+  font-size: 16px;
+  margin-top: 0px; /* Add some top margin for spacing */
+}
+
+/* Style the profile handle */
+.profile-handle {
+  font-size: 15px;
+  color: #888888;
+  margin-top: 0px; /* Add some top margin for spacing */
+}
+
+/* Style for the trending container */
+.trending-container {
+  margin-top: 20px;
+  background-color: #e9e9e9;;
+  padding: 20px;
+  border-left: 1px solid #e1e8ed;
+  border-radius: 13px;
+  overflow-y: auto;
+  height: 350px;
+  margin-right:0%;
+}
+
+/* Style for the trending heading */
+.trending-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #0f0f0f; /* Twitter blue color */
+}
+/* Style for individual trending items */
+.trending-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+/* Style for the trending item icon */
+.trending-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #1da1f2; /* Twitter blue color */
+}
+
+
+/* Style for the trending item text */
+.trending-text {
+  font-size: 16px;
+  color: #333333;
+}
+
+/* Style for the trending item hashtag */
+.trending-hashtag {
+  font-size: 16px;
+  color: #1da1f2;
+}
+
+.fa-ellipsis-h {
+  float: right; /* Float the icon to the right */
+}
+
+/* Style for the "Who to Follow" container */
+.who-to-follow-container {
+  background-color: #e9e9e9;;
+  padding: 20px;
+  border-left: 1px solid #e1e8ed;
+  margin-top: 20px;
+  overflow-y: auto;
+  height: 300px;
+  border-radius: 13px;
+}
+
+/* Style for the "Who to Follow" heading */
+.who-to-follow-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Style for individual follow suggestions */
+.follow-suggestion {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+/* Style for the follow suggestion avatar */
+.follow-avatar img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Style for the follow suggestion info */
+.follow-info {
+  flex: 1;
+}
+
+/* Style for the follow suggestion name */
+.follow-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+/* Style for the follow suggestion handle */
+.follow-handle {
+  font-size: 14px;
+  color: #888888;
+}
+
+/* Style for the follow button */
+.follow-button {
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for the follow button */
+.follow-button:hover {
+  background-color: #1990d8;
+}
+
+/* Styled Search Input */
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #e9e9e9; /* Adjust background color as needed */
+  border-radius: 25px; /* Adjust border radius as needed */
+  padding: 8px 12px; /* Adjust padding as needed */
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.search-icon {
+  color: #000000; /* Adjust icon color as needed */
+  font-size: 18px; /* Adjust icon size as needed */
+  margin-right: 8px; /* Adjust margin as needed */
+}
+
+/* Footer Items */
+.footer-items {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-items a {
+  text-decoration: none;
+  color: #1da1f2;
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+/* Mobile Optimization Styles */
+@media (max-width: 768px) {
+  .left-container {
+    display: none;
+  }
+
+  .mobile-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #e9e9e9;
+    padding: 10px 0;
+    z-index: 999;
+  }
+
+  .mobile-footer i {
+    font-size: 24px;
+    color: #1da1f2;
+    cursor: pointer;
+  }
+}
+
+/* Style for the main container that holds left, main, and right containers */
+.container {
+  display: flex; /* Create a flex container */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style for the left flex container */
+.left-container {
+  position: fixed;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  width: 280px;
+  color: white;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  overflow-y: auto; /* Add this line to make it scrollable */
+}
+
+/* Style for the middle flex container */
+.middle-container {
+  flex: 0.25; /* Adjust the width as needed */
+  background-color: #ffffff; /* Set your preferred background color */
+  padding: 20px; /* Add padding as needed */
+  border-left: 0px solid #e9e9e9; /* Add a border on the left side */
+  margin-left: 150px; /* Adjust this margin to match the width of the left container */
+  margin-right: 600px; /* Adjust this margin to match the width of the right container */
+  height: calc(
+    100vh - 60px
+  ); /* Adjust the height to fit the remaining viewport height */
+}
+
+/* Style for the main flex container */
+.main-container {
+  flex: 0.5;
+
+}
+
+/* Style for the right flex container */
+.right-container {
+  flex: 2.5; /* Adjust the flex value as needed to allocate space for the right container */
+  text-align: center;
+  align-items: center;
+  overflow-y: auto; /* Add this line to make it scrollable */
+  position: fixed; /* Add fixed positioning to keep it in place */
+  right: 0; /* Position it at the right edge */
+  top: 0; /* Position it at the top */
+  bottom: 0; /* Extend it to the bottom */
+  background-color: white; /* Set your preferred background color */
+  padding: 20px; /* Add padding as needed */
+  border-left: 2px solid #e9e9e9; /* Add a border on the left side */
+  margin-left: 1000px;
+}
+.avatar img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.title-container {
+  margin-top: -20px;
+  left: 1;
+  margin-bottom: 5px; /* Add margin to create space below the title */
+  font-weight: 650;
+  font-size: 20px;
+}
+
+.post-tweet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  width: 650px;
+  height: 100px;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  resize: none;
+  margin-top: 1px;
+  margin-bottom: 0px;
+}
+
+.avatar-2 img {
+  left: 0; /* Position it at the right edge */
+  top: 0; /* Position it at the top */
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+
+
+.profile-icon {
+  font-size: 20px;
+  margin-right: 2px;
+  color: #1da1f2;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for the submit button */
+.btn:hover {
+  background-color: #1990d8;
+}
+
+form {
+  margin-top: 0px;
+  gap: 100px;
+  max-width: 100px;
+  max-height: 200px;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 1px;
+}
+
+/* Style the avatar */
+.avatar {
+  display: flex;
+  align-items: center;
+}
+
+.avatar img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.avatar-tweet input[type="text"] {
+  flex-grow: 1; /* This will make the input field expand and take up available space */
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+
+.second-container-nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.second-container-nav li {
+  margin-right: 20px;
+  transition: background-color 0.3s;
+}
+
+.second-container-nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the text color when hovering over navigation items */
+.second-container-nav li:hover a {
+  color: white;
+}
+
+/* Hover effect for navigation items */
+.second-container-nav li:hover {
+  background-color: #1da1f2;
+}
+
+/* Style for the tabbed navigation */
+.tabbed-navigation {
+  display: flex;
+  background-color: white; /* Set the background color */
+  border-bottom: 1px solid #ddd; /* Add a bottom border */
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Apply styles to individual tab links */
+.tab-link {
+  flex: 1; /* Distribute tabs evenly within the container */
+  text-align: center; /* Center-align the tab text */
+  padding: 10px 20px; /* Add padding to the tabs */
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Text color for inactive tabs */
+}
+
+.tab-link:hover {
+background-color: #dad8d8;
+}
+
+.tab-link.active:hover {
+  background-color: #dad8d8;
+}
+
+/* Apply styles to the active tab */
+.tab-link.active {
+  background-color: white; /* Background color for the active tab */
+  color: black; /* Text color for the active tab */
+}
+
+/* Container for the buttons */
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 2px; /* Adjust the spacing between buttons */
+}
+
+/* Style for the buttons */
+.toolbar label,
+.toolbar button {
+  padding: 5px 5px;
+  background-color: #1da1f2; /* Twitter blue color */
+  color: #fff;
+  border: none;
+  border-radius: 50px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+/* Hover effect for buttons */
+.toolbar label:hover,
+.toolbar button:hover {
+  background-color: #0d8aec; /* Darker blue on hover */
+}
+
+/* Style for the file input element */
+.toolbar input[type="file"] {
+  display: none; /* Hide the input element */
+}
+
+/* Style for the icon */
+.toolbar i {
+  margin-right: 1px; /* Adjust the spacing between icon and text */
+}
+
+.add-gif {
+  background-color: #52c8ff;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Style for the "Add a GIF" button */
+.add-gif:hover {
+  background-color: #2a9ad6;
+}
+
+
+/* Style for the file input button */
+#file-input {
+  display: none; /* Hide the default file input */
+}
+
+#file-input + label {
+  background-color: #ffffff; /* Twitter blue color */
+  color: #0d8aec;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+#file-input + label:hover {
+  background-color: #0d8aec; /* Darker blue on hover */
+}
+
+#file-input + label i {
+  margin-top: 5px;
+  margin-left: -30px;
+  margin-right: -20px; /* Adjust the spacing between icon and text */
+  font-size: 20px; /* Adjust the font size as needed */
+}
+
+.tweet-input input {
+  position: relative;
+  display: flex;
+  align-items: center; /* Center vertically */
+  border: none; /* Remove the border */
+   margin-left: 0px;
+  }
+
+.tweet-input .avatar img {
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  margin-right: 8px; /* Add margin between avatar and input */
+}
+
+
+/* Style the tweet actions container */
+.tweet-actions {
+  display: flex;
+  justify-content: space-between; /* To evenly space the icons */
+  align-items: center;
+  padding: 10px 15px; /* Add padding as needed */
+
+}
+
+
+/* Style for the buttons, icons, and links within tweet actions */
+.tweet-actions label,
+.tweet-actions button,
+.tweet-actions i {
+  margin-right: 40px;
+  font-size: 20px; /* Adjust the font size as needed */
+  cursor: pointer;
+  color: #1da1f2; /* Change the color to your preference */
+}
+
+/* Style for the tag location link within tweet actions */
+.tweet-actions .tag-location a {
+  text-decoration: none;
+  color: #1da1f2;
+  font-weight: bold;
+}
+
+/* Style for the clickable emoji icon within tweet actions */
+.tweet-actions .add-emoji {
+  text-decoration: none;
+  color: #1da1f2;
+  font-weight: bold;
+}
+
+/* Style for the poll and scheduling icons within tweet actions */
+.tweet-actions .poll-link,
+.tweet-actions .schedule-link {
+  font-size: 20px;
+  color: #1da1f2;
+  cursor: pointer;
+}
+
+
+
+/* Hover effect for buttons and icons within tweet actions */
+.tweet-actions label:hover,
+.tweet-actions button:hover,
+.tweet-actions i:hover {
+  color: #0d8aec;
+}
+
+/* Style the "Post" button */
+.post-button button {
+  margin-left: 200px;
+  background-color: #1da1f2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+/* Hover effect for the "Post" button */
+.post-button button:hover {
+  background-color: #0d8aec; /* Darker blue on hover */
+}
+
+.tweet-content .user-info {
+  display: flex;
+  align-items: center; /* Vertically center align user info */
+  justify-content: flex-start; /* Align user info to the left */
+}
+
+.user-name {
+  font-weight: bold;
+  margin-right: 4px; /* Add some spacing between user name and handle */
+}
+
+.user-handle {
+  color: #657786; /* Twitter's user handle color */
+  margin-right: 10px; /* Add spacing between handle and tweet time */
+}
+
+.tweet-time {
+  color: #657786; /* Twitter's tweet time color */
+}
+
+.tweet-image {
+  margin-top: 10px; /* Add some top margin to separate it from the tweet text */
+}
+/* Style the tweet image itself */
+.tweet-image img {
+  max-width: 100%; /* Ensure the image doesn't exceed the container's width */
+  border-radius: 8px; /* Add rounded corners to the image */
+}
+
+.tweet {
+  border: 1px solid #e9e9e9;
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+/* Style for the tweet content */
+.tweet-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Style for the avatar */
+.avatar {
+  display: flex;
+  align-items: center;
+}
+.avatar-tweet {
+  display: flex;
+  align-items: center;
+}
+.avatar-tweet img {
+  margin-left: -50px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 16px;
+
+}
+.avatar img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+/* Style for user information */
+.user-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.user-handle {
+  color: #657786;
+  font-size: 14px;
+}
+
+.tweet-time {
+  color: #657786;
+  font-size: 14px;
+}
+
+/* Style for tweet text */
+.tweet-text {
+  margin-top: 1px;
+  font-size: 16px;
+}
+
+/* Style for tweet image */
+.tweet-image img {
+  max-width: 600px;
+  max-height: 600px;
+  border-radius: 50px;
+  margin-top: 2px;
+}
+
+/* Style for tweet actions */
+.tweet-actions {
+  margin-top: 1px;
+  display: flex;
+  gap: 10px;
+  color: #657786;
+}
+
+.tweet-actions-2 {
+  margin-top: 1px;
+  display: flex;
+  gap: 200px;
+  color: #657786;
+}
+
+.tweet-actions i {
+  font-size: 20px;
+  cursor: pointer;
+}
+.tweet-actions-2 .far.fa-comment:hover,
+.tweet-actions-2 .fas.fa-retweet:hover,
+.tweet-actions-2 .far.fa-heart:hover,
+.tweet-actions-2 .fas.fa-external-link-alt:hover {
+  color: #1da1f2;
+  cursor: pointer;
+}
+
+/* Adjust the margin-top to move the aside element below the search container */
+aside {
+  background-color: #e9e9e9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Style the "Subscribe to Premium" text */
+aside div:first-child {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Style the description text */
+aside div:nth-child(2) {
+  font-size: 14px;
+  color: #657786;
+  margin-bottom: 20px;
+}
+
+/* Style the "Subscribe" button */
+aside a {
+  text-decoration: none;
+}
+
+aside a div {
+  background-color: #050505;
+  color: white;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+aside a div:hover {
+  background-color: #2e2e2e;
+}
+
+.trending-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding: 10px;
+  background-color: #e9e9e9; /* Set your preferred background color */
+  border: 1px solid #e9e9e9; /* Add a border as needed */
+  border-radius: 8px;
+}
+
+.trending-label,
+.trending-topic,
+.trending-posts {
+  font-size: 16px;
+  color: #333; /* Set your preferred text color */
+}
+
+.trending-more {
+  font-size: 20px;
+  color: #1da1f2; /* Set your preferred color for the ellipsis icon */
+  cursor: pointer;
+}
+
+.profile-avatar {
+  margin-right: 16px; /* Adjust the spacing between avatar and info as needed */
+}
+
+/* Mobile Optimization Styles */
+@media (max-width: 768px) {
+  /* Hide the left sidebar on smaller screens */
+  .left-container {
+    display: none;
+  }
+
+  /* Display the mobile menu icon and style it */
+  .mobile-menu-icon {
+    display: block;
+    text-align: right;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  /* Style for the mobile menu icon */
+  .mobile-menu-icon i {
+    font-size: 24px;
+    color: #1da1f2;
+  }
+
+  /* Adjust the main container for smaller screens */
+  .container {
+    flex-direction: column;
+  }
+
+  /* Style for the middle content on smaller screens */
+  .middle-container {
+    flex-grow: 1;
+    margin-left: 0; /* Remove margin to allow full width */
+    margin-right: 0; /* Remove margin to allow full width */
+  }
+
+  /* Style for the right sidebar on smaller screens */
+  .right-container {
+    flex: 1;
+    position: static; /* Remove fixed positioning */
+    width: 100%; /* Allow full width */
+    margin-left: 0; /* Remove margin to allow full width */
+    border-left: none; /* Remove border */
+  }
+
+  /* Style for the main content on smaller screens */
+  .main-container {
+    flex: 1;
+    margin-top: 60px; /* Add space for the header */
+  }
+
+  /* Style for the tweet input on smaller screens */
+  .tweet-input {
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
+    width: 100%; /* Make the input full width */
+  }
+
+  /* Style for the profile section on smaller screens */
+  .profile-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Style for the profile name on smaller screens */
+  .profile-name {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  /* Style for the profile handle on smaller screens */
+  .profile-handle {
+    font-size: 18px;
+  }
+
+  /* Style for the trending container on smaller screens */
+  .trending-container {
+    height: auto;
+    max-height: none;
+  }
+
+  /* Style for the "Who to Follow" container on smaller screens */
+  .who-to-follow-container {
+    height: auto;
+    max-height: none;
+  }
+
+  /* Style for the tweet button on smaller screens */
+  .tweet-button {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+    /* Style for the "Post" button on smaller screens */
+    .post-button button {
+      margin-left: 0; /* Reset margin to center the button */
+      width: 100%; /* Make the button full width */
+      text-align: center; /* Center-align the button text */
+    }
+
+    .tweet-image {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      margin-left: -180px;
+      border-radius: 13px;
+      align-items: center; /* Center vertically */
+      margin-top: 5px; /* Add some top margin to separate it from the tweet text */
+      max-width: 100%;
+      max-height: 70%; /* Set a maximum height for the image container (adjust as needed) */
+      overflow: hidden; /* Hide any overflow if the image exceeds the container size */
+    }
+
+    .tweet-image img {
+      max-width: 50%; /* Set a maximum width for the images */
+      max-height: 100%; /* Ensure the image fits within the container */
+      border-radius: 30px; /* Add rounded corners to the image */
+      object-fit: contain; /* Maintain the image's aspect ratio and fit it within the container */
+    }
+
+    .tweet-text{
+      font-size: 15px;
+      
+    }
+  }
